@@ -1,7 +1,7 @@
 #!/bin/bash
 temp="$(gettemp)"
 fanPin=11
-maxtemp=40
+maxtemp=45
 if [ -d "/sys/class/gpio/gpio$fanPin" ]; then
  printf "GPIO Setup.\n"
  else
