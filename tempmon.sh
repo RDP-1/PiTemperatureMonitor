@@ -1,7 +1,13 @@
 #!/bin/bash
 temp="$(gettemp)"
 fanPin=11
-maxtemp="$(cat temp.dat)"
+if [ ! -f temp.dat ]; then
+ printf "Error, temp.dat missing.\nEnter maximum temp:"
+ read maxtemp
+ printf "$maxtemp" > ~/.scripts/temp.dat
+else
+ maxtemp="$(cat temp.dat)"
+fi
 
 if [ -d "/sys/class/gpio/gpio$fanPin" ]; then
  printf "GPIO Setup.\n"
