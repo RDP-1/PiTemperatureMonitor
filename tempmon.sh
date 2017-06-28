@@ -4,7 +4,7 @@ fanPin=11
 if [ ! -f temp.dat ]; then
  printf "Error, temp.dat missing.\nEnter maximum temp:"
  read maxtemp
- printf "$maxtemp" > ~/.scripts/temp.dat
+ printf "$maxtemp" > temp.dat
 else
  maxtemp="$(cat temp.dat)"
 fi
