@@ -25,7 +25,7 @@ if [ -f tempmon.sh ] && [ -f gettemp.sh ]; then
  printf "Enter check interval in minutes: "
  read interval
  printf "Creating cronjob to run every %s minutes... " "$interval"
- printf "*/%s * * * * ~/.scripts/tempmon.sh\n" "$interval" > cronjob 
+ printf "*/%s * * * * cd ~/.scripts && ~/.scripts/tempmon.sh\n" "$interval" > cronjob 
  crontab cronjob
  printf "Done.\n"
  rm cronjob
