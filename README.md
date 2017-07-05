@@ -7,7 +7,7 @@ Download all the files then `chmod +x` and run `installer.sh` in the same direct
 I used 2 minute intervals and a maximum temp of 40°C.
 
 ## Removal
-Run `rm -R ~/.scripts && rm /usr/bin/gettemp` to remove all the scripts.
+Run `rm -r ~/.scripts && rm /usr/bin/gettemp` to remove all the scripts.
 
 ### Other stuff
 Also note that pin 11 refers to GPIO11, which is pin 23 on the board. Because the Pi works at 3.3v logic level, 
