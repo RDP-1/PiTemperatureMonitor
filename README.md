@@ -1,5 +1,5 @@
 # PiTemperatureMonitor
-A very simple bash script that monitors the CPU temp using cron and controls a fan accordingly. No python required!
+A simple bash script that monitors the CPU temp using cron and controls a fan accordingly. No python required!
 
 ## Installation
 Download all the files then `chmod +x` and run `installer.sh` in the same directory as `tempmon.sh` and `gettemp.sh`, then follow the onscreen instructions.
