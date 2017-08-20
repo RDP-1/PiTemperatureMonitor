@@ -5,6 +5,7 @@ A simple bash script that monitors the CPU temp using cron and controls a fan ac
 Download all the files then `chmod +x` and run `installer.sh` in the same directory as `tempmon.sh` and `gettemp.sh`, then follow the onscreen instructions.
 
 I used 2 minute intervals and a maximum temp of 40°C.
+Rerun the installer if you want to change the time and temperature variables after installation.
 
 ## Removal
 Run `rm -r ~/.scripts && rm /usr/bin/gettemp` to remove all the scripts.
